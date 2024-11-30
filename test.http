@@ -1,0 +1,25 @@
+### GET toutes les maisons
+GET http://127.0.0.1:8000/maisons
+
+### GET une maison par ID
+GET http://127.0.0.1:8000/maisons/1
+
+### POST ajouter une maison
+POST http://127.0.0.1:8000/maisons
+Content-Type: application/json
+
+{
+  "nom": "Musée Clemenceau",
+  "region": "Île-de-France",
+  "description": "Homme d'état...",
+  "auteur_nom": "Georges Clemenceau",
+  "annee_obtention": 2012,
+  "date_maj": "2022-07-22 10:28:41",
+  "code_postal": 75006,
+  "departement": "Paris",
+  "pays": "France",
+  "commune": "Paris",
+  "adresse": "44 Rue François Gay",
+  "latitude": 48.85287,
+  "longitude": 2.343452
+}

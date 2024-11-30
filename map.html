@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6e47f10d7acc5e3e2ba88fe8907c8a60 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6e47f10d7acc5e3e2ba88fe8907c8a60" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6e47f10d7acc5e3e2ba88fe8907c8a60 = L.map(
+                "map_6e47f10d7acc5e3e2ba88fe8907c8a60",
+                {
+                    center: [48.8566, 2.3522],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_99a3a5d833c830f02b8081d96341ce8e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_99a3a5d833c830f02b8081d96341ce8e.addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+            var marker_6775fc3174bcdddef97510b4b0bb8a4d = L.marker(
+                [48.85287, 2.343452],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_d9768e401dc24821ea892f48c2a81aa4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ce3eb86b46e7e05d16aba57a5e09e61 = $(`<div id="html_0ce3eb86b46e7e05d16aba57a5e09e61" style="width: 100.0%; height: 100.0%;">Musée Clemenceau (Paris)</div>`)[0];
+                popup_d9768e401dc24821ea892f48c2a81aa4.setContent(html_0ce3eb86b46e7e05d16aba57a5e09e61);
+            
+        
+
+        marker_6775fc3174bcdddef97510b4b0bb8a4d.bindPopup(popup_d9768e401dc24821ea892f48c2a81aa4)
+        ;
+
+        
+    
+    
+            var marker_9ef016cb744e7af890801c78e1934205 = L.marker(
+                [48.986892, 2.320916],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_ba8a7b6db64bfab54be25115ce5420a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab5ea67ae41d0aaccc6a0ccc17720c5a = $(`<div id="html_ab5ea67ae41d0aaccc6a0ccc17720c5a" style="width: 100.0%; height: 100.0%;">Musée Jean-Jacques Rousseau (Montmorency)</div>`)[0];
+                popup_ba8a7b6db64bfab54be25115ce5420a1.setContent(html_ab5ea67ae41d0aaccc6a0ccc17720c5a);
+            
+        
+
+        marker_9ef016cb744e7af890801c78e1934205.bindPopup(popup_ba8a7b6db64bfab54be25115ce5420a1)
+        ;
+
+        
+    
+    
+            var marker_ec01805ae448c545f38a0146f8144299 = L.marker(
+                [48.769653, 2.258672],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_85f6289289e58841ac44bd0f31b8f0a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6930a56703a237e6d1139ba4b1173228 = $(`<div id="html_6930a56703a237e6d1139ba4b1173228" style="width: 100.0%; height: 100.0%;">Maison de Chateaubriand - La Vallée-aux-Loups (Châtenay-Malabry)</div>`)[0];
+                popup_85f6289289e58841ac44bd0f31b8f0a5.setContent(html_6930a56703a237e6d1139ba4b1173228);
+            
+        
+
+        marker_ec01805ae448c545f38a0146f8144299.bindPopup(popup_85f6289289e58841ac44bd0f31b8f0a5)
+        ;
+
+        
+    
+    
+            var marker_fd9a979e6fb93ba2e511164074962bc6 = L.marker(
+                [48.8544557, 2.3355825],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_65618e974e10dd00e9626faffb5e0dd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27ba02b89537d6ac46f8176958174b5c = $(`<div id="html_27ba02b89537d6ac46f8176958174b5c" style="width: 100.0%; height: 100.0%;">Musée national Eugène-Delacroix (Paris)</div>`)[0];
+                popup_65618e974e10dd00e9626faffb5e0dd2.setContent(html_27ba02b89537d6ac46f8176958174b5c);
+            
+        
+
+        marker_fd9a979e6fb93ba2e511164074962bc6.bindPopup(popup_65618e974e10dd00e9626faffb5e0dd2)
+        ;
+
+        
+    
+    
+            var marker_d1508a35a7d689cb57487d885ffc3d39 = L.marker(
+                [48.85287, 2.343452],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_6553cb1daa5dd1ef2bbde13dea300960 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c094703c598008064384d672eb03e9f8 = $(`<div id="html_c094703c598008064384d672eb03e9f8" style="width: 100.0%; height: 100.0%;">Bibliothèque de l'Arsenal (Paris)</div>`)[0];
+                popup_6553cb1daa5dd1ef2bbde13dea300960.setContent(html_c094703c598008064384d672eb03e9f8);
+            
+        
+
+        marker_d1508a35a7d689cb57487d885ffc3d39.bindPopup(popup_6553cb1daa5dd1ef2bbde13dea300960)
+        ;
+
+        
+    
+    
+            var marker_7419df6cfd3cd1ff5c87fb66f6905eb4 = L.marker(
+                [48.7761924, 1.8054618],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_1424b5f80154293305bede538720797c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d81bf331864b4db8f4646b9aaed7aa45 = $(`<div id="html_d81bf331864b4db8f4646b9aaed7aa45" style="width: 100.0%; height: 100.0%;">Maison-Musée Maurice Ravel (Montfort-l'Amaury)</div>`)[0];
+                popup_1424b5f80154293305bede538720797c.setContent(html_d81bf331864b4db8f4646b9aaed7aa45);
+            
+        
+
+        marker_7419df6cfd3cd1ff5c87fb66f6905eb4.bindPopup(popup_1424b5f80154293305bede538720797c)
+        ;
+
+        
+    
+    
+            var marker_38521fcf7a573333b916590999989bc7 = L.marker(
+                [48.8261395, 2.3326144],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_e193b6215bd32c213765f5227bb96cfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_312145135ce56c17f34a28f260e03216 = $(`<div id="html_312145135ce56c17f34a28f260e03216" style="width: 100.0%; height: 100.0%;">Atelier musée Chana Orloff (Paris)</div>`)[0];
+                popup_e193b6215bd32c213765f5227bb96cfc.setContent(html_312145135ce56c17f34a28f260e03216);
+            
+        
+
+        marker_38521fcf7a573333b916590999989bc7.bindPopup(popup_e193b6215bd32c213765f5227bb96cfc)
+        ;
+
+        
+    
+    
+            var marker_4b9dc102113e9620f1abc33fdc9f4e4f = L.marker(
+                [48.85287, 2.343452],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_21711a2d797687f16eaae4cb6f296d54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6320177c8a5dec52969a9b598f446e68 = $(`<div id="html_6320177c8a5dec52969a9b598f446e68" style="width: 100.0%; height: 100.0%;">Appartement d'Auguste Comte (Paris)</div>`)[0];
+                popup_21711a2d797687f16eaae4cb6f296d54.setContent(html_6320177c8a5dec52969a9b598f446e68);
+            
+        
+
+        marker_4b9dc102113e9620f1abc33fdc9f4e4f.bindPopup(popup_21711a2d797687f16eaae4cb6f296d54)
+        ;
+
+        
+    
+    
+            var marker_a3c5227d6822f5ae279a008618d6dcd4 = L.marker(
+                [48.8779055, 2.3345759],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_11271a36e2d907150a87641a9cb7c0d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_141189b7f8b12700752487381be9be86 = $(`<div id="html_141189b7f8b12700752487381be9be86" style="width: 100.0%; height: 100.0%;">Musée national Gustave Moreau (Paris)</div>`)[0];
+                popup_11271a36e2d907150a87641a9cb7c0d4.setContent(html_141189b7f8b12700752487381be9be86);
+            
+        
+
+        marker_a3c5227d6822f5ae279a008618d6dcd4.bindPopup(popup_11271a36e2d907150a87641a9cb7c0d4)
+        ;
+
+        
+    
+    
+            var marker_e5a625916e6aef52a039fb5539534cea = L.marker(
+                [48.4311564, 2.7467931],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_33c236e5f62db237387cf138959a1d8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9001b71227de17157830e9f583dee304 = $(`<div id="html_9001b71227de17157830e9f583dee304" style="width: 100.0%; height: 100.0%;">Musée départemental Stéphane Mallarmé (Vulaines-sur-Seine)</div>`)[0];
+                popup_33c236e5f62db237387cf138959a1d8f.setContent(html_9001b71227de17157830e9f583dee304);
+            
+        
+
+        marker_e5a625916e6aef52a039fb5539534cea.bindPopup(popup_33c236e5f62db237387cf138959a1d8f)
+        ;
+
+        
+    
+    
+            var marker_f37fe9eb85e3195f6c3f8f896160346c = L.marker(
+                [48.402677, 2.457828],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_d128701d1c751ee3767e48ae215216a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9a101fa87b97f8c1d991e387e6d900c = $(`<div id="html_b9a101fa87b97f8c1d991e387e6d900c" style="width: 100.0%; height: 100.0%;">Maison Jean Cocteau (Milly-la-Forêt)</div>`)[0];
+                popup_d128701d1c751ee3767e48ae215216a5.setContent(html_b9a101fa87b97f8c1d991e387e6d900c);
+            
+        
+
+        marker_f37fe9eb85e3195f6c3f8f896160346c.bindPopup(popup_d128701d1c751ee3767e48ae215216a5)
+        ;
+
+        
+    
+    
+            var marker_0481292d55d58634a71509cc5b51c969 = L.marker(
+                [48.77099, 2.167839],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_a4ae17042ae4837d2f9be193b7ca1621 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29448c2462b77d0af8794952884d4d6d = $(`<div id="html_29448c2462b77d0af8794952884d4d6d" style="width: 100.0%; height: 100.0%;">Maison Léon Blum (Jouy-en-Josas)</div>`)[0];
+                popup_a4ae17042ae4837d2f9be193b7ca1621.setContent(html_29448c2462b77d0af8794952884d4d6d);
+            
+        
+
+        marker_0481292d55d58634a71509cc5b51c969.bindPopup(popup_a4ae17042ae4837d2f9be193b7ca1621)
+        ;
+
+        
+    
+    
+            var marker_d90a54ccc3c2f49ef597ce0959d9e3a1 = L.marker(
+                [49.073035, 2.169911],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_498fa2c42434125c5dc1e4638da10555 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51cb7fce6171f22c1818d1b54c84fd14 = $(`<div id="html_51cb7fce6171f22c1818d1b54c84fd14" style="width: 100.0%; height: 100.0%;">Maison-atelier de Daubigny (Auvers-sur-Oise)</div>`)[0];
+                popup_498fa2c42434125c5dc1e4638da10555.setContent(html_51cb7fce6171f22c1818d1b54c84fd14);
+            
+        
+
+        marker_d90a54ccc3c2f49ef597ce0959d9e3a1.bindPopup(popup_498fa2c42434125c5dc1e4638da10555)
+        ;
+
+        
+    
+    
+            var marker_72c3cf2d012b915dbada8ad503594610 = L.marker(
+                [48.8814647, 2.1059687],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_e5caed1633b8ebd149735539baa9ddde = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d22ba6f8941cd658a6c2ee66e1cf8de = $(`<div id="html_8d22ba6f8941cd658a6c2ee66e1cf8de" style="width: 100.0%; height: 100.0%;">Château de Monte-Cristo (Le Port-Marly)</div>`)[0];
+                popup_e5caed1633b8ebd149735539baa9ddde.setContent(html_8d22ba6f8941cd658a6c2ee66e1cf8de);
+            
+        
+
+        marker_72c3cf2d012b915dbada8ad503594610.bindPopup(popup_e5caed1633b8ebd149735539baa9ddde)
+        ;
+
+        
+    
+    
+            var marker_d2fc42fbbdd979a305740de122d111ae = L.marker(
+                [49.006452, 1.961502],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_c26c48ac5d83238d3e1de10b6d65a4c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae733de276874e878f990b0df4fdcf23 = $(`<div id="html_ae733de276874e878f990b0df4fdcf23" style="width: 100.0%; height: 100.0%;">Château de Vaux-sur-Seine ("Castello Marochetti") (Vaux-sur-Seine)</div>`)[0];
+                popup_c26c48ac5d83238d3e1de10b6d65a4c5.setContent(html_ae733de276874e878f990b0df4fdcf23);
+            
+        
+
+        marker_d2fc42fbbdd979a305740de122d111ae.bindPopup(popup_c26c48ac5d83238d3e1de10b6d65a4c5)
+        ;
+
+        
+    
+    
+            var marker_df1bd0a371b375a8a915a378cb4b45b8 = L.marker(
+                [48.855356, 2.280847],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_7cff720ea3d694814da36db19df3a2c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eda3dc06c54695cd9ef7d49dcbabd295 = $(`<div id="html_eda3dc06c54695cd9ef7d49dcbabd295" style="width: 100.0%; height: 100.0%;">Maison de Balzac (Paris)</div>`)[0];
+                popup_7cff720ea3d694814da36db19df3a2c4.setContent(html_eda3dc06c54695cd9ef7d49dcbabd295);
+            
+        
+
+        marker_df1bd0a371b375a8a915a378cb4b45b8.bindPopup(popup_7cff720ea3d694814da36db19df3a2c4)
+        ;
+
+        
+    
+    
+            var marker_628046432e07db6fb06924ba18bedfa1 = L.marker(
+                [48.85287, 2.343452],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_12cb40165ef01d25c2876b8e8167f805 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c2a4e7250a19e894b39dd2e86a5657d = $(`<div id="html_2c2a4e7250a19e894b39dd2e86a5657d" style="width: 100.0%; height: 100.0%;">Appartement-atelier Le Corbusier - Immeuble Molitor (Paris)</div>`)[0];
+                popup_12cb40165ef01d25c2876b8e8167f805.setContent(html_2c2a4e7250a19e894b39dd2e86a5657d);
+            
+        
+
+        marker_628046432e07db6fb06924ba18bedfa1.bindPopup(popup_12cb40165ef01d25c2876b8e8167f805)
+        ;
+
+        
+    
+    
+            var marker_ca7f061d6f4aa1c2248108fb73532192 = L.marker(
+                [48.770677, 1.852319],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_48a846fdfe4893a4d8543d327976d361 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd7ea295ff3ffa1a532324421c71ff27 = $(`<div id="html_bd7ea295ff3ffa1a532324421c71ff27" style="width: 100.0%; height: 100.0%;">Maison Jean Monnet (Bazoches-sur-Guyonne)</div>`)[0];
+                popup_48a846fdfe4893a4d8543d327976d361.setContent(html_bd7ea295ff3ffa1a532324421c71ff27);
+            
+        
+
+        marker_ca7f061d6f4aa1c2248108fb73532192.bindPopup(popup_48a846fdfe4893a4d8543d327976d361)
+        ;
+
+        
+    
+    
+            var marker_9a085e4a6d2bea0b74c9af3d66b0609d = L.marker(
+                [49.074123, 2.15876],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_15f5647388d5a0c5e5281b5d437e2967 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8eadf91dd862541c4cb1702a5dc1036 = $(`<div id="html_e8eadf91dd862541c4cb1702a5dc1036" style="width: 100.0%; height: 100.0%;">Maison-atelier Emile Boggio (Auvers-sur-Oise)</div>`)[0];
+                popup_15f5647388d5a0c5e5281b5d437e2967.setContent(html_e8eadf91dd862541c4cb1702a5dc1036);
+            
+        
+
+        marker_9a085e4a6d2bea0b74c9af3d66b0609d.bindPopup(popup_15f5647388d5a0c5e5281b5d437e2967)
+        ;
+
+        
+    
+    
+            var marker_1838e9ccb849d943a9f7131e389ca443 = L.marker(
+                [48.813955, 2.252619],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_8a59fb08854a4e57fa7a84cffde90ae5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_331f41543b11740ecf1b63ad588deda8 = $(`<div id="html_331f41543b11740ecf1b63ad588deda8" style="width: 100.0%; height: 100.0%;">Musée Rodin - Villa des Brillants (Meudon)</div>`)[0];
+                popup_8a59fb08854a4e57fa7a84cffde90ae5.setContent(html_331f41543b11740ecf1b63ad588deda8);
+            
+        
+
+        marker_1838e9ccb849d943a9f7131e389ca443.bindPopup(popup_8a59fb08854a4e57fa7a84cffde90ae5)
+        ;
+
+        
+    
+    
+            var marker_f3fd27cf00e72b3624ec4619ff7c9f1d = L.marker(
+                [48.954743, 1.99249],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_bb9f424e5bc8e7be52b0405dded75e29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83c67209e916bb58fc2d16f32e99ee49 = $(`<div id="html_83c67209e916bb58fc2d16f32e99ee49" style="width: 100.0%; height: 100.0%;">Château de Médan (Medan)</div>`)[0];
+                popup_bb9f424e5bc8e7be52b0405dded75e29.setContent(html_83c67209e916bb58fc2d16f32e99ee49);
+            
+        
+
+        marker_f3fd27cf00e72b3624ec4619ff7c9f1d.bindPopup(popup_bb9f424e5bc8e7be52b0405dded75e29)
+        ;
+
+        
+    
+    
+            var marker_fb1edfa41a9e107a307b0236cd34835c = L.marker(
+                [48.85287, 2.343452],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_f812277a390c2041b5be16509aad6687 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e75c020c1b6f71914964476a518fa8c5 = $(`<div id="html_e75c020c1b6f71914964476a518fa8c5" style="width: 100.0%; height: 100.0%;">Musée Pasteur (Paris)</div>`)[0];
+                popup_f812277a390c2041b5be16509aad6687.setContent(html_e75c020c1b6f71914964476a518fa8c5);
+            
+        
+
+        marker_fb1edfa41a9e107a307b0236cd34835c.bindPopup(popup_f812277a390c2041b5be16509aad6687)
+        ;
+
+        
+    
+    
+            var marker_99848491ccd7c40484dc0f3be5fb5dc9 = L.marker(
+                [48.98556, 1.814075],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_166834c21af2e49caff31d88cbb86c8b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b61cfb95bd42ab78de2700187bff982 = $(`<div id="html_6b61cfb95bd42ab78de2700187bff982" style="width: 100.0%; height: 100.0%;">Les Maisonnettes (Gargenville)</div>`)[0];
+                popup_166834c21af2e49caff31d88cbb86c8b.setContent(html_6b61cfb95bd42ab78de2700187bff982);
+            
+        
+
+        marker_99848491ccd7c40484dc0f3be5fb5dc9.bindPopup(popup_166834c21af2e49caff31d88cbb86c8b)
+        ;
+
+        
+    
+    
+            var marker_461c1972a651587d38bb1a03a876eeb7 = L.marker(
+                [48.726254, 2.123325],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_b847fe9e17adc8573ea53482e1f9078b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3de99cda4fb616142d1fd38c0ce2374d = $(`<div id="html_3de99cda4fb616142d1fd38c0ce2374d" style="width: 100.0%; height: 100.0%;">Maison-Atelier Foujita (Villiers-le-Bâcle)</div>`)[0];
+                popup_b847fe9e17adc8573ea53482e1f9078b.setContent(html_3de99cda4fb616142d1fd38c0ce2374d);
+            
+        
+
+        marker_461c1972a651587d38bb1a03a876eeb7.bindPopup(popup_b847fe9e17adc8573ea53482e1f9078b)
+        ;
+
+        
+    
+    
+            var marker_06eaf16168bfb59a16a391bcddc9f19f = L.marker(
+                [48.827141, 2.198647],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_baacf33f95b729dcfee56524f989c629 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90c2d09fe0085bf103ceeeef5cba9c18 = $(`<div id="html_90c2d09fe0085bf103ceeeef5cba9c18" style="width: 100.0%; height: 100.0%;">Maison des Jardies (Sèvres)</div>`)[0];
+                popup_baacf33f95b729dcfee56524f989c629.setContent(html_90c2d09fe0085bf103ceeeef5cba9c18);
+            
+        
+
+        marker_06eaf16168bfb59a16a391bcddc9f19f.bindPopup(popup_baacf33f95b729dcfee56524f989c629)
+        ;
+
+        
+    
+    
+            var marker_cdaed803b8b622f86c2d60d9fd1e31af = L.marker(
+                [48.954743, 1.99249],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_97e65dce4866d5b2e7760420fa29a63d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_240204c224ec3ab70d079ee228fcf266 = $(`<div id="html_240204c224ec3ab70d079ee228fcf266" style="width: 100.0%; height: 100.0%;">Maison d’Émile Zola (Medan)</div>`)[0];
+                popup_97e65dce4866d5b2e7760420fa29a63d.setContent(html_240204c224ec3ab70d079ee228fcf266);
+            
+        
+
+        marker_cdaed803b8b622f86c2d60d9fd1e31af.bindPopup(popup_97e65dce4866d5b2e7760420fa29a63d)
+        ;
+
+        
+    
+    
+            var marker_f275223b0039e0b8fb3e631c4b46b26d = L.marker(
+                [48.892496, 2.087541],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_000a40e9b77eb335eb7c2e5b0de7ad42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0eadd5a3adc5cbad0c5c7fb72ed23562 = $(`<div id="html_0eadd5a3adc5cbad0c5c7fb72ed23562" style="width: 100.0%; height: 100.0%;">Musée départemental Maurice Denis (Saint-Germain-en-Laye)</div>`)[0];
+                popup_000a40e9b77eb335eb7c2e5b0de7ad42.setContent(html_0eadd5a3adc5cbad0c5c7fb72ed23562);
+            
+        
+
+        marker_f275223b0039e0b8fb3e631c4b46b26d.bindPopup(popup_000a40e9b77eb335eb7c2e5b0de7ad42)
+        ;
+
+        
+    
+    
+            var marker_9d03ec5f6b0a24f105ef34a1afb665ba = L.marker(
+                [48.85287, 2.343452],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_14a991afec7604c40afbf0e8350c09b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1b5a8535c5e8c2917593274aae98b38 = $(`<div id="html_d1b5a8535c5e8c2917593274aae98b38" style="width: 100.0%; height: 100.0%;">Musée Curie (Paris)</div>`)[0];
+                popup_14a991afec7604c40afbf0e8350c09b8.setContent(html_d1b5a8535c5e8c2917593274aae98b38);
+            
+        
+
+        marker_9d03ec5f6b0a24f105ef34a1afb665ba.bindPopup(popup_14a991afec7604c40afbf0e8350c09b8)
+        ;
+
+        
+    
+    
+            var marker_d724d39a3bb5d48186823157eb9c53c1 = L.marker(
+                [48.710884, 2.491344],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_b5d2e1167994ad64a027eb31da96aeb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0dd57cbc4fd32610f2a5667b02d3602 = $(`<div id="html_a0dd57cbc4fd32610f2a5667b02d3602" style="width: 100.0%; height: 100.0%;">Maison Caillebotte (Yerres)</div>`)[0];
+                popup_b5d2e1167994ad64a027eb31da96aeb8.setContent(html_a0dd57cbc4fd32610f2a5667b02d3602);
+            
+        
+
+        marker_d724d39a3bb5d48186823157eb9c53c1.bindPopup(popup_b5d2e1167994ad64a027eb31da96aeb8)
+        ;
+
+        
+    
+    
+            var marker_6e1060d293879d7c8007381de850cb6c = L.marker(
+                [48.85287, 2.343452],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_9895e1fe609250ce3e9613c95e25e765 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7da52b90c47cb33e8e4f79e389dfce2e = $(`<div id="html_7da52b90c47cb33e8e4f79e389dfce2e" style="width: 100.0%; height: 100.0%;">Maison de Victor Hugo – Hôtel Rohan – Guéménée (Paris)</div>`)[0];
+                popup_9895e1fe609250ce3e9613c95e25e765.setContent(html_7da52b90c47cb33e8e4f79e389dfce2e);
+            
+        
+
+        marker_6e1060d293879d7c8007381de850cb6c.bindPopup(popup_9895e1fe609250ce3e9613c95e25e765)
+        ;
+
+        
+    
+    
+            var marker_ec630549d401b6ca3e10ab774e11ac6c = L.marker(
+                [48.9097273, 3.1752397],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_12d375265bf799a30f783a3c7ad1da82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0a46c60a9642ba32f9dc95ec13f1da0 = $(`<div id="html_b0a46c60a9642ba32f9dc95ec13f1da0" style="width: 100.0%; height: 100.0%;">Maison de Pierre Mac Orlan (Saint-Cyr-sur-Morin)</div>`)[0];
+                popup_12d375265bf799a30f783a3c7ad1da82.setContent(html_b0a46c60a9642ba32f9dc95ec13f1da0);
+            
+        
+
+        marker_ec630549d401b6ca3e10ab774e11ac6c.bindPopup(popup_12d375265bf799a30f783a3c7ad1da82)
+        ;
+
+        
+    
+    
+            var marker_d953eec154d2aa1e6998a140fe2f3873 = L.marker(
+                [48.571462, 1.933999],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_25dfc480eba61d351af0ac773b26430c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_079a0acfe57c9c879281d829b6146dc6 = $(`<div id="html_079a0acfe57c9c879281d829b6146dc6" style="width: 100.0%; height: 100.0%;">Maison Elsa Triolet – Louis Aragon - Moulin de Villeneuve (Saint-Arnoult-en-Yvelines)</div>`)[0];
+                popup_25dfc480eba61d351af0ac773b26430c.setContent(html_079a0acfe57c9c879281d829b6146dc6);
+            
+        
+
+        marker_d953eec154d2aa1e6998a140fe2f3873.bindPopup(popup_25dfc480eba61d351af0ac773b26430c)
+        ;
+
+        
+    
+    
+            var marker_da3ff4517cd863ef88947ce92d76eeeb = L.marker(
+                [48.865613, 2.2992961],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_2b121287023b37afe3035e07530eaabd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88736347a7d644633b5bf6fcbe210864 = $(`<div id="html_88736347a7d644633b5bf6fcbe210864" style="width: 100.0%; height: 100.0%;">Musée Yves Saint Laurent (Paris)</div>`)[0];
+                popup_2b121287023b37afe3035e07530eaabd.setContent(html_88736347a7d644633b5bf6fcbe210864);
+            
+        
+
+        marker_da3ff4517cd863ef88947ce92d76eeeb.bindPopup(popup_2b121287023b37afe3035e07530eaabd)
+        ;
+
+        
+    
+    
+            var marker_7100be72392febf4d0a699263d2dc3cb = L.marker(
+                [48.402376, 2.781486],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_842781ba708c7493b1aab4e3945f5401 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79e55d6c4e93d5d96912d7e1cc66cb51 = $(`<div id="html_79e55d6c4e93d5d96912d7e1cc66cb51" style="width: 100.0%; height: 100.0%;">Atelier-musée de Rosa Bonheur (Thomery)</div>`)[0];
+                popup_842781ba708c7493b1aab4e3945f5401.setContent(html_79e55d6c4e93d5d96912d7e1cc66cb51);
+            
+        
+
+        marker_7100be72392febf4d0a699263d2dc3cb.bindPopup(popup_842781ba708c7493b1aab4e3945f5401)
+        ;
+
+        
+    
+    
+            var marker_9f833136e530be4974dcef9d08782b31 = L.marker(
+                [48.885356, 2.062429],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_ff3928d7701c82e0c13a91b037b0d9cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11e02f29aba2e0efe7d7cfdf3d5b708c = $(`<div id="html_11e02f29aba2e0efe7d7cfdf3d5b708c" style="width: 100.0%; height: 100.0%;">Maison natale de Claude Debussy (Saint-Germain-en-Laye)</div>`)[0];
+                popup_ff3928d7701c82e0c13a91b037b0d9cf.setContent(html_11e02f29aba2e0efe7d7cfdf3d5b708c);
+            
+        
+
+        marker_9f833136e530be4974dcef9d08782b31.bindPopup(popup_ff3928d7701c82e0c13a91b037b0d9cf)
+        ;
+
+        
+    
+    
+            var marker_c692fc41947d4cd192ebdeb0a0af6c78 = L.marker(
+                [48.7063155, 2.0759727],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_e82514d07a7c60b13d24dd6ae8bddbb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbacbe07980fb35efa8d7c073c1b330f = $(`<div id="html_dbacbe07980fb35efa8d7c073c1b330f" style="width: 100.0%; height: 100.0%;">Maison-Musée Raymond Devos (Saint-Rémy-lès-Chevreuse)</div>`)[0];
+                popup_e82514d07a7c60b13d24dd6ae8bddbb5.setContent(html_dbacbe07980fb35efa8d7c073c1b330f);
+            
+        
+
+        marker_c692fc41947d4cd192ebdeb0a0af6c78.bindPopup(popup_e82514d07a7c60b13d24dd6ae8bddbb5)
+        ;
+
+        
+    
+    
+            var marker_3505ceda8c519c190170f5515aa8bd6b = L.marker(
+                [48.89452, 2.791914],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_5f3d38fed209622272271c404dd8a81b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_688ab15f7820fb4b301ca5724251727d = $(`<div id="html_688ab15f7820fb4b301ca5724251727d" style="width: 100.0%; height: 100.0%;">Maison natale Louis Braille (Coupvray)</div>`)[0];
+                popup_5f3d38fed209622272271c404dd8a81b.setContent(html_688ab15f7820fb4b301ca5724251727d);
+            
+        
+
+        marker_3505ceda8c519c190170f5515aa8bd6b.bindPopup(popup_5f3d38fed209622272271c404dd8a81b)
+        ;
+
+        
+    
+    
+            var marker_065ad54e970dc681aa837f4c7a899664 = L.marker(
+                [48.8829556, 2.3076398],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_f194960e3ef8395072e1f8d8daa3780e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_333e2522c9c8aff7a3ee9037bf229011 = $(`<div id="html_333e2522c9c8aff7a3ee9037bf229011" style="width: 100.0%; height: 100.0%;">Musée atelier Guillaume Dubufe - Musée Jean-Jacques Henner (Paris)</div>`)[0];
+                popup_f194960e3ef8395072e1f8d8daa3780e.setContent(html_333e2522c9c8aff7a3ee9037bf229011);
+            
+        
+
+        marker_065ad54e970dc681aa837f4c7a899664.bindPopup(popup_f194960e3ef8395072e1f8d8daa3780e)
+        ;
+
+        
+    
+    
+            var marker_109d1ce5df3abed53c84ddd5a1def5ca = L.marker(
+                [49.074123, 2.15876],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_84e2f0eefabe5e2a07fb3591b3593820 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c77924df2c8a447d00e24aeae98899c5 = $(`<div id="html_c77924df2c8a447d00e24aeae98899c5" style="width: 100.0%; height: 100.0%;">Maison du Docteur Gachet (Auvers-sur-Oise)</div>`)[0];
+                popup_84e2f0eefabe5e2a07fb3591b3593820.setContent(html_c77924df2c8a447d00e24aeae98899c5);
+            
+        
+
+        marker_109d1ce5df3abed53c84ddd5a1def5ca.bindPopup(popup_84e2f0eefabe5e2a07fb3591b3593820)
+        ;
+
+        
+    
+    
+            var marker_28d89f4356a5dff550286e8c962278c1 = L.marker(
+                [48.836972, 2.242698],
+                {}
+            ).addTo(map_6e47f10d7acc5e3e2ba88fe8907c8a60);
+        
+    
+        var popup_48d70f4da970e3dcba8cde6484a8bf14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55a2bc3368fb8579ab01cc7d508a4d3b = $(`<div id="html_55a2bc3368fb8579ab01cc7d508a4d3b" style="width: 100.0%; height: 100.0%;">Bibliothèque Marmottan (Boulogne-Billancourt)</div>`)[0];
+                popup_48d70f4da970e3dcba8cde6484a8bf14.setContent(html_55a2bc3368fb8579ab01cc7d508a4d3b);
+            
+        
+
+        marker_28d89f4356a5dff550286e8c962278c1.bindPopup(popup_48d70f4da970e3dcba8cde6484a8bf14)
+        ;
+
+        
+    
+</script>
+</html>
